@@ -1,0 +1,14 @@
+.player{
+  display: flex;
+  height: 90px;
+  background-color: #181818;
+  border-top: 1px solid #282828;
+  margin: 0px !important;
+}
+.video_audio{
+  display: none;
+}
+.album_image{
+  height: 80px;
+  width: 80px;
+}

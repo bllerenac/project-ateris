@@ -1,16 +1,14 @@
-import Icons from '../Icons'
+import { BiPlayCircle, BiPauseCircle } from 'react-icons/bi';
 
 function PlayPauseRender(status){
     if(status === "1"){
       return(<>
-        <img alt="play_filled.svg" src={Icons.play_filled} className="play hide"/>
-        <img alt="pause.svg" className="pause" src={Icons.stop}/>
+        <BiPauseCircle color='white' size='35px' fontWeight='100' className="pause"/>
       </>)
     }else{
-      return(<>
-        <img alt="play_filled.svg" src={Icons.play_filled} className="play"/>
-        <img alt="pause.svg" className="pause hide" src={Icons.stop}/>
-      </>)
+      return(
+        <BiPlayCircle color='white' size='35px' fontWeight='100' className="play"/>
+      )
     }
 }
 
