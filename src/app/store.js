@@ -1,8 +1,14 @@
-import { configureStore } from '@reduxjs/toolkit';
-import counterReducer from '../features/counter/counterSlice';
+import { configureStore } from "@reduxjs/toolkit";
+import videosReducer from "../features/videoList/videoSlice";
+import playlistReducer from "../features/playList/playlistSlice"
+import playerReducer from "../features/player/playerSlice"
+import searchReducer from "../features/search/searchSlice";
 
-export const store = configureStore({
+export default configureStore({
   reducer: {
-    counter: counterReducer,
+    videos: videosReducer,
+    playlist: playlistReducer,
+    player: playerReducer,
+    search: searchReducer,
   },
 });
