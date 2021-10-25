@@ -1,4 +1,5 @@
 {
+  "homepage": "https://ateris.github.io/repository-name",
   "name": "ateris",
   "version": "0.1.0",
   "private": true,
@@ -21,9 +22,12 @@
     "react-youtube": "^7.13.1",
     "semantic-ui-css": "^2.4.1",
     "semantic-ui-react": "^2.0.3",
+    "styled-icons": "^10.37.0",
     "yt-player": "^3.5.0"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -43,5 +47,6 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "devDependencies": {}
 }

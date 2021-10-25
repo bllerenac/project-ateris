@@ -1,7 +1,6 @@
-//import { css } from "@emotion/react";
 import styled from "@emotion/styled";
-import Player from "../components/contents/Player";
-import NavBar from "../components/contents/NavBar";
+import Player from "../contents/Player";
+import NavBar from "../contents/NavBar";
 
 
 
@@ -26,7 +25,7 @@ const PageDiv = styled.div`
   overflow: auto;
 `
 
-function Template ({children}){
+function Layout ({children}){
   return(
     <StyledDiv>
         <ContentDiv>
@@ -40,5 +39,5 @@ function Template ({children}){
   )
 }
 
-export default Template
+export default Layout
 
